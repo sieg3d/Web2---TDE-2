@@ -73,4 +73,19 @@ n3 = +(prompt(`Digite o terceiro número:`))
 document.write(`Os numeros digitados foram ${n1}, ${n2} e ${n3}.<br>`)
 document.write(`<br>O maior valor  é ${Math.max(n1, n2, n3)} e o menor valor é ${Math.min(n1, n2, n3)}.`)
 
+
+
+document.write(`<p>7. Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento. Para salários superiores a R$1.250,00, calcule um aumento de 10%. Para os inferiores ou iguais, o número é de 15%.</p>`)
+
+salario = +(prompt(`Digite o valor do funcionário: `))
+if (salario <= 1250){
+  document.write(`O salário do funcionário é R$${salario}.<br>`)
+  salario = salario*1.10
+  document.write(`Com o aumento de 10%, passa a ser R$${salario.toFixed(2)}.`)
+}else{
+  document.write(`O salário do funcionário é R$${salario}.<br>`)
+  salario = salario*1.15
+  document.write(`Com o aumento de 15%, passa a ser R$${salario.toFixed(2)}.`)
+}
+
 */
