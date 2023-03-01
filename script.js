@@ -115,4 +115,19 @@ if((turno=='M') || (turno=='m')){
   alert(`Valor inválido!`)
 }
 
+
+document.write(`<p>10. Faça um script que peça os 3 lados de um triângulo. O script deverá informar se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.</p>`)
+
+lado1 = +(prompt(`Digite o primeiro lado:`))
+lado2 = +(prompt(`Digite o segundo lado:`))
+lado3 = +(prompt(`Digite o terceiro lado:`))
+
+if((lado1==lado2)&&(lado1==lado3)&&(lado2==lado3)){
+  document.write(`Os valores informados (${lado1}, ${lado2} e ${lado3}) são iguais. Logo, este é um triangulo equilatero`)
+}else if((lado1==lado2)||(lado1==lado3)||(lado2==lado3)){
+   document.write(`Os valores informados (${lado1}, ${lado2} e ${lado3}) apenas 2 lados são iguais. Logo, este é um triangulo isóceles`)
+
+}else{
+  document.write(`Os valores informados (${lado1}, ${lado2} e ${lado3}) são diferentes. Logo, este é um triangulo escaleno`)
+}
 */
