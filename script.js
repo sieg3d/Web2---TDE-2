@@ -24,4 +24,19 @@ if(escolha==aposta){
   alert(`Que pena. Você errou. :( `)
 }
 
+
+document.write(`<p>3. Escreva um programa que leia a velocidade de um carro. Se ele ultrapassar 80Km/h, mostre uma mensagem dizendo que foi multado.<br>A multa vai custar R$7,00 por cada KM acima do limite.</p>`)
+
+velMax = 80
+multa = 7
+
+vel = +(prompt(`Qual a velocidade do carro?`))
+if(vel>80){
+  multa= multa*(vel-velMax)
+  alert(`Acima do limite de velocidadae!`)
+  document.write(`Você ultrapassou ${vel-velMax}km do limite de velocidade (80km/h).<br> O valor da multa é R$${multa.toFixed(2)}.`)
+}else{
+  document.write(`Dentro do limite de velocidade.`)
+}
+
 */
