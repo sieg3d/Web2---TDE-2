@@ -39,4 +39,18 @@ if(vel>80){
   document.write(`Dentro do limite de velocidade.`)
 }
 
+
+document.write(`<p>4. Desenvolva um programa que pergunte a distância de uma viagem em Km. Calcule o preço da passagem, cobrando R$0,50 por KM para viagens de até 200Km e R$0,45 para viagens mais longas.</p>`)
+
+distancia = +(prompt(`Qual a distancia da viagem em Km?`))
+passagem = 0
+
+if(distancia<=200){
+  passagem = distancia*0.5
+  document.write(`A distancia da sua viagem é de ${distancia}Km.<br> O valor final da sua viagem é de R$${passagem.toFixed(2)}.`)
+}else{
+  passagem = distancia*0.45
+  document.write(`A distancia da sua viagem é de ${distancia}Km.<br> O valor final da sua viagem é de R$${passagem.toFixed(2)}.`)
+}
+
 */
