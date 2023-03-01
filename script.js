@@ -63,4 +63,14 @@ if(ano%4==0){
   document.write(`O ano ${ano} não é bissexto.`)
 }
 
+
+
+document.write(`<p>6. Faça um programa que leia 3 números e mostre qual é o maior e qual é o menor.</p>`)
+n1 = +(prompt(`Digite o primeiro número:`))
+n2 = +(prompt(`Digite o segundo número:`))
+n3 = +(prompt(`Digite o terceiro número:`))
+
+document.write(`Os numeros digitados foram ${n1}, ${n2} e ${n3}.<br>`)
+document.write(`<br>O maior valor  é ${Math.max(n1, n2, n3)} e o menor valor é ${Math.min(n1, n2, n3)}.`)
+
 */
