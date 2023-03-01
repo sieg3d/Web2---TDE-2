@@ -53,4 +53,14 @@ if(distancia<=200){
   document.write(`A distancia da sua viagem é de ${distancia}Km.<br> O valor final da sua viagem é de R$${passagem.toFixed(2)}.`)
 }
 
+
+document.write(`<p>5. Faça um programa que leia um ano qualquer e mostre se ele é Bissexto.</p>`)
+
+ano = parseInt(prompt(`Digite o ano:`))
+if(ano%4==0){
+  document.write(`O ano ${ano} é bissexto.`)
+}else{
+  document.write(`O ano ${ano} não é bissexto.`)
+}
+
 */
