@@ -9,6 +9,19 @@ milhar = Math.floor(sorteio / 1000);
 document.write(`<p>O número sorteado foi: ${sorteio.toFixed(0)}</p>`)
 
 document.write(`Unidade: ${unidade.toFixed(0)}| Dezena: ${dezena.toFixed(0)}| Centena: ${centena.toFixed(0)}| Milhar: ${milhar.toFixed(0)}`)
+
+
+document.write(`<p>2. Escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador. O programa deverá escrever na tela se o usuário venceu ou perdeu.</p>`)
+
+escolha = parseInt(Math.random()*6)
+aposta = parseInt(prompt(`De 0 a 5, que número o computador escolheu?`))
+document.write(`O computador escolheu ${escolha}`)
+document.write(`<br>Você escolheu ${aposta}`)
+
+if(escolha==aposta){
+  alert(`PARABÉNS! Você acertou o número escolhido pelo computador!`)
+}else{
+  alert(`Que pena. Você errou. :( `)
+}
+
 */
-
-
