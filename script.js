@@ -88,4 +88,16 @@ if (salario <= 1250){
   document.write(`Com o aumento de 15%, passa a ser R$${salario.toFixed(2)}.`)
 }
 
+
+
+document.write(`<p>8. Faça um script que peça dois inteiros e armazene-os em duas variáveis. Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.</p>`)
+
+int1 = parseInt(prompt(`Digite um numero inteiro:`))
+int2 = parseInt(prompt(`Digite outro numero inteiro:`))
+alert(`Os valores digitados foram ${int1} e ${int2}.`)
+troca = int1
+int1=int2
+int2=troca
+alert(`A inversão dos valores é ${int1} e ${int2}.`)
+
 */
