@@ -100,4 +100,19 @@ int1=int2
 int2=troca
 alert(`A inversão dos valores é ${int1} e ${int2}.`)
 
+
+
+document.write(`<p>9. Faça um script que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.</p>`)
+
+turno=prompt(`Em qual turno você estuda? M - Matutino, V - Vespertino ou N - Noturno`)
+if((turno=='M') || (turno=='m')){
+  document.write(`Bom dia!`)
+}else if((turno=='V') || (turno=='v')){
+  document.write(`Boa tarde!`)
+}else if((turno=='N') || (turno=='n')){
+  document.write(`Boa noite!`)
+}else{
+  alert(`Valor inválido!`)
+}
+
 */
