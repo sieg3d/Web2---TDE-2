@@ -160,10 +160,16 @@ document.write(`Desafio: Faça um script que calcule as raízes de uma equação
 a = +(prompt(`Digite o valor de a:`))
 b = +(prompt(`Digite o valor de b:`))
 c = +(prompt(`Digite o valor de c:`))
-delta = b**2 - 4 * a * c
-document.write(`<br>${delta}`)
+delta = b ** 2 - 4 * a * c
+document.write(`<br>O valor de  Δ é: ${delta}`)
+if (delta < 0) {
+    document.write(`<br>Não possui raizes reais.`)
+} else if (delta == 0) {
+    x = -b / (2 * a)
+    document.write(`Possui apenas uma raiz real que é ${x}`)
+} else {
 
-x = (-b+Math.sqrt(delta))/2*a
-y = (-b-Math.sqrt(delta))/2*a
-document.write(`<br>${x}`)
-document.write(`<br>${y}`)
+    x = (-b + Math.sqrt(delta)) / 2 * a
+    y = (-b - Math.sqrt(delta)) / 2 * a
+    document.write(`<br>As raizes da equação são ${x.toFixed(1)} e ${y.toFixed(1)}`)
+}
