@@ -167,4 +167,3 @@ x = (-b+Math.sqrt(delta))/2*a
 y = (-b-Math.sqrt(delta))/2*a
 document.write(`<br>${x}`)
 document.write(`<br>${y}`)
-//teste
