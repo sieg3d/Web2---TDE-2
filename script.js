@@ -164,12 +164,12 @@ delta = b ** 2 - 4 * a * c
 document.write(`<br>O valor de  Δ é: ${delta}`)
 if (delta < 0) {
     document.write(`<br>Não possui raizes reais.`)
-} else if (delta == 0) {
+} else if (delta === 0) {
     x = -b / (2 * a)
-    document.write(`Possui apenas uma raiz real que é ${x}`)
+    document.write(`<br>Possui apenas uma raiz real que é ${x}.`)
 } else {
 
     x = (-b + Math.sqrt(delta)) / 2 * a
     y = (-b - Math.sqrt(delta)) / 2 * a
-    document.write(`<br>As raizes da equação são ${x.toFixed(1)} e ${y.toFixed(1)}`)
+    document.write(`<br>As raizes da equação são ${x.toFixed(1)} e ${y.toFixed(1)}.`)
 }
